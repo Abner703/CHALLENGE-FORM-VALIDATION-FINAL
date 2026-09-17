@@ -3,3 +3,6 @@ const userName = document.getElementById("name")
 const userMail = document.getElementById("email") 
 const userPassword = document.getElementById("password") 
 const welcomeMsg = document.getElementById("message")
+
+form.addEventListener("submit", (event) =>{
+    event.preventDefault()
