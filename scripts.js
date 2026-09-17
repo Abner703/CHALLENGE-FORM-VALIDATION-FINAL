@@ -6,3 +6,8 @@ const welcomeMsg = document.getElementById("message")
 
 form.addEventListener("submit", (event) =>{
     event.preventDefault()
+    if (userName.value.trim() === ""){
+        welcomeMsg.textContent = "Entrer votre nom"
+    }else if (userName.value.trim().length < 3){
+        welcomeMsg.textContent = "Nom trop court"
+    }
