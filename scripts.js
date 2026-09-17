@@ -10,4 +10,8 @@ form.addEventListener("submit", (event) =>{
         welcomeMsg.textContent = "Entrer votre nom"
     }else if (userName.value.trim().length < 3){
         welcomeMsg.textContent = "Nom trop court"
+    }else if(userMail.value.trim() === ""){
+        welcomeMsg.textContent = "Entrer votre email"
+    }else if (!userMail.checkVisibility()){
+        welcomeMsg.textContent = "Entrer un mail correct"
     }
