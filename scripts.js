@@ -14,4 +14,6 @@ form.addEventListener("submit", (event) =>{
         welcomeMsg.textContent = "Entrer votre email"
     }else if (!userMail.checkVisibility()){
         welcomeMsg.textContent = "Entrer un mail correct"
+    }else if(userPassword.value.trim().length < 8){
+        welcomeMsg.textContent = "Entrer un mot de robuste, d'au moins 8 caractères"
     }
